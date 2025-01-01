@@ -3,7 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:todo/constants/app_constants.dart';
 import 'package:todo/model/todo_model.dart';
-import 'package:todo/screens/home_screen.dart';
+import 'package:todo/screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +33,7 @@ class MyApp extends ConsumerWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Todo App',
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
